@@ -1,0 +1,80 @@
+configfile: "config.yaml"
+
+import os
+
+# Get the directory path from the command line arguments
+# updated to accommadate flexible dir definition in config.yaml
+
+# Get a list of all the subdirs in the directory
+input_reads = [d for d in os.listdir(config["input_dir"]) if os.path.isdir(os.path.join(config["input_dir"], d))]
+
+rule all:
+    input: 
+        expand(config["done_reads_dir"] + "/{input_reads}", input_reads=input_reads)
+        
+rule gen_star_idx:
+    input: 
+        expand("{genome}", genome=config["genome"]),
+        expand("{annotations}", annotations=config["annotations"]),
+    output:
+        directory(config["star_index"])
+    threads: 24
+    resources:
+        mem = 48000,
+        time = "24:00:00",
+        partition = "normal"
+    message: 
+        "generating star index..."
+    shell:
+        """STAR --runMode genomeGenerate --runThreadN {threads} \
+            --genomeSAsparseD 3 --genomeDir {output[0]}"""
+
+rule combine_reads:
+    input: 
+        config["input_dir"] + "/{input_reads}/"
+    output: 
+        config["combined_reads_dir"] + "/{input_reads}.r1.fastq.gz",
+        config["combined_reads_dir"] + "/{input_reads}.r2.fastq.gz",
+    message:
+        "combining reads..."
+    shell:
+        """
+        find {input} -regextype sed -type f -iregex '.*r1.*\.fastq\.gz' -exec cat {{}} + > {output[0]}
+        find {input} -regextype sed -type f -iregex '.*r2.*\.fastq\.gz' -exec cat {{}} + > {output[1]}
+        """
+
+rule star_mapping:
+    input:
+        config["combined_reads_dir"] + "/{input_reads}.r1.fastq.gz",
+        config["combined_reads_dir"] + "/{input_reads}.r2.fastq.gz",
+        idx=expand("{star_index}", star_index=config["star_index"]),
+    output: 
+        directory(config["mapping_dir"] + "/{input_reads}/")
+    message:
+        "star mapping..."
+    threads: 32
+    resources:
+        mem = 32000,
+        time = '6:00:00'
+    shell:
+        """STAR --genomeDir {input.idx} --runThreadN {threads} \
+            --soloType CB_UMI_Simple \
+            --soloCBstart 12 --soloCBlen {config[cblen]} \
+            --soloUMIstart {config[umistart]} --soloUMIlen {config[umilen]} \
+            --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts \
+            --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR \
+            --soloFeatures Gene GeneFull SJ Velocyto --soloCellFilter EmptyDrops_CR \
+            --soloMultiMappers EM \
+            --readFilesIn {input[1]} {input[0]} --readFilesCommand 'gunzip -c'\
+            --outFileNamePrefix {output}/"""
+
+rule mv_done_reads:
+    input:
+        config["combined_reads_dir"] + "/{input_reads}.r1.fastq.gz",
+        config["combined_reads_dir"] + "/{input_reads}.r2.fastq.gz",
+        config["mapping_dir"] + "/{input_reads}/",
+        fromd=config["input_dir"] + "/{input_reads}/"
+    output: 
+        directory(config["done_reads_dir"] + "/{input_reads}")
+    run:
+        shell("mv {input.fromd} {output}")

@@ -1,0 +1,1 @@
+find  . -regextype sed -regex ".*Solo.out/.*$" -print0 |  rsync -av --files-from=- --from0 ./ ./tmp/
