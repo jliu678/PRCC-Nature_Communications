@@ -18,4 +18,6 @@ overgrowth and tumorigenesis. Inhibiting YAP1 activity with MGH-CP1, a newly dev
 inhibitor, blocked MDSC accumulation and suppressed tumor development. Our results identify
 the disrupted Hippo/YAP signaling as a major contributor to pRCC and suggest that targeting the
 disrupted Hippo pathway represents a novel strategy to prevent and treat pRCC.
+
+
 ![image](https://github.com/user-attachments/assets/0a495823-e8d4-4486-ab35-91474618e85c)
