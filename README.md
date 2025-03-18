@@ -9,7 +9,7 @@ featured with a frequent shallow deletion of the upstream tumor suppressors of t
 signaling pathway, suggesting that this signaling pathway may play a role in pRCC development.
 We developed a transgenic mouse model with a renal epithelial cell-specific hyperactivation of
 YAP1 and found that hyperactivation of YAP1 could induce dedifferentiation and transformation
-of renal tubular epithelial cells leading to the development of pRCC. We analyzed at the single53
+of renal tubular epithelial cells leading to the development of pRCC. We analyzed at the single
 cell resolution the cellular landscape alterations during cancer initiation and progression. Our data
 indicated that the hyperactivated YAP1, via manipulating multiple signaling pathways, induced
 epithelial cell transformation, MDSC (Myeloid-derived suppressor cells) accumulation, and pRCC
