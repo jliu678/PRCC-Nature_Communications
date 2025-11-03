@@ -1,5 +1,5 @@
 # Project Summary
-Single-cell transcriptomic, genomic, and clinical data analyses revealed disrupted Hippo/YAP signaling as a major contributor to kidney cancer and guided the preclinically validation of a noval strategy to prevent and treat kidney cancer through Hippo pathway.
+Single-cell transcriptomic, genomic, and clinical data analyses revealed disrupted Hippo/YAP signaling as a major contributor to kidney cancer and guided the preclinical validation of a noval strategy to prevent and treat kidney cancer through Hippo pathway.
 ---
 
 The scripts here support the findings published in [Nature Communications](https://www.nature.com/articles/s41467-025-57697-7).
