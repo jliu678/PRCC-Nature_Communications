@@ -1,11 +1,10 @@
-# PRCC-Nature_Communications
-The scripts that support the findings in the PRCC paper published in [Nature Communications](https://www.nature.com/articles/s41467-025-57697-7).
+# Project Summary
+Single-cell transcriptomic, genomic, and clinical data analyses revealed disrupted Hippo/YAP signaling as a major contributor to kidney cancer and guided the preclinically validation of a noval strategy to prevent and treat kidney cancer through Hippo pathway.
+---
 
-Our results identify the disrupted Hippo/YAP signaling as a major contributor to pRCC and suggest that targeting the
-disrupted Hippo pathway represents a novel strategy to prevent and treat pRCC.
+The scripts here support the findings published in [Nature Communications](https://www.nature.com/articles/s41467-025-57697-7).
 
-
-# Project Abstract
+# Abstract
 - Large-scale cancer genetic/genomic studies demonstrated that papillary renal cell carcinoma (pRCC) is
 featured with a frequent shallow deletion of the upstream tumor suppressors of the Hippo/YAP
 signaling pathway, suggesting that this signaling pathway may play a role in pRCC development.
