@@ -113,3 +113,11 @@ of renal tubular epithelial cells leading to the development of pRCC.
 </p>
 
 ---
+
+<p align="center">
+  <img src="src/Figs12.png" alt="Ag" width="700"/>
+  <br>
+  <em></em>
+</p>
+
+---
