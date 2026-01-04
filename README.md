@@ -18,80 +18,99 @@ of renal tubular epithelial cells leading to the development of pRCC.
 
 
 # Results
+> click on each image to see high-resolution with detail captions
 
 <p align="center">
-  <img src="src/Fig1.png" alt="Ag" width="700"/>
-  <br>
-  <em></em>
+  <a href="https://www.nature.com/articles/s41467-025-57697-7/figures/1" target="_blank">
+     <img src="src/Fig1.png" alt="Ag" width="700"/>
+       <br>
+       <em></em>
+  </a>
 </p>
 
 ---
 
 <p align="center">
-  <img src="src/Fig2.png" alt="Ag" width="700"/>
-  <br>
-  <em></em>
+  <a href="https://www.nature.com/articles/s41467-025-57697-7/figures/2" target="_blank">
+    <img src="src/Fig2.png" alt="Ag" width="700"/>
+    <br>
+    <em></em>
+  </a>
 </p>
 
 ---
 
 <p align="center">
-  <img src="src/Fig3.png" alt="Ag" width="700"/>
-  <br>
-  <em></em>
+  <a href="https://www.nature.com/articles/s41467-025-57697-7/figures/3" target="_blank">
+    <img src="src/Fig3.png" alt="Ag" width="700"/>
+    <br>
+    <em></em>
+  </a>
 </p>
 
 ---
 
 <p align="center">
-  <img src="src/Fig4.png" alt="Ag" width="700"/>
-  <br>
-  <em></em>
-</p>
-
----
-
-
-<p align="center">
-  <img src="src/Fig5.png" alt="Ag" width="700"/>
-  <br>
-  <em></em>
-</p>
-
----
-
-
-<p align="center">
-  <img src="src/Fig6.png" alt="Ag" width="700"/>
-  <br>
-  <em></em>
+  <a href="https://www.nature.com/articles/s41467-025-57697-7/figures/4" target="_blank">
+    <img src="src/Fig4.png" alt="Ag" width="700"/>
+    <br>
+    <em></em>
+  </a>
 </p>
 
 ---
 
 
 <p align="center">
-  <img src="src/Fig7.png" alt="Ag" width="700"/>
-  <br>
-  <em></em>
+  <a href="https://www.nature.com/articles/s41467-025-57697-7/figures/5" target="_blank">
+    <img src="src/Fig5.png" alt="Ag" width="700"/>
+    <br>
+    <em></em>
+  </a>
 </p>
 
 ---
 
 
 <p align="center">
-  <img src="src/Fig8.png" alt="Ag" width="700"/>
-  <br>
-  <em></em>
+  <a href="https://www.nature.com/articles/s41467-025-57697-7/figures/6" target="_blank">
+    <img src="src/Fig6.png" alt="Ag" width="700"/>
+    <br>
+    <em></em>
+  </a>
 </p>
 
 ---
 
 
 <p align="center">
-  <img src="src/Fig9.png" alt="Ag" width="700"/>
-  <br>
-  <em></em>
+  <a href="https://www.nature.com/articles/s41467-025-57697-7/figures/7" target="_blank">
+    <img src="src/Fig7.png" alt="Ag" width="700"/>
+    <br>
+    <em></em>
+  </a>
+</p>
+
+---
+
+
+<p align="center">
+  <a href="https://www.nature.com/articles/s41467-025-57697-7/figures/8" target="_blank">
+    <img src="src/Fig8.png" alt="Ag" width="700"/>
+    <br>
+    <em></em>
+  </a>
+</p>
+
+---
+
+
+<p align="center">
+  <a href="https://www.nature.com/articles/s41467-025-57697-7/figures/9" target="_blank">
+    <img src="src/Fig9.png" alt="Ag" width="700"/>
+    <br>
+    <em></em>
+  </a>
 </p>
 
 ---
